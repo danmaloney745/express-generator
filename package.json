@@ -1,0 +1,14 @@
+{
+  "name": "expres-generator",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Daniel Maloney <danielmaloneygti@gmail.com>",
+  "bin": {
+    "snippet": "index.js"
+  },
+  "dependencies": {
+    "express": "~3.2.4"
+  },
+  "devDependencies": {},
+  "license": "ISC"
+}
