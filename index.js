@@ -6,6 +6,7 @@ const program = require('commander');
 const fs = require('fs');
 const exec = require('child_process').exec;
 const jsonpkg = require('./package.json');
+const directory = require('./lib/createProject');
 
 let appName ="./" + program.name;
 
@@ -29,5 +30,7 @@ program
     .option('p, --password <password>', 'The user\'s password')
 
 program.parse(process.argv);
+
+directory.createDirectory(appName, '/routes');
   
 console.log('This is the filesearch script.');
