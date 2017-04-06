@@ -31,5 +31,11 @@ let packageJson = {
 }
 
 directory.createDirectory(appName, '/routes');
-  
-console.log('This is the filesearch script.');
+directory.createDirectory(appName, '/views');
+directory.createDirectory(appName, '/models');
+directory.createDirectory(appName, '/controllers');
+directory.createDirectory(appName, '/public');
+directory.createDirectory(appName, '/public/js');
+directory.createDirectory(appName, '/public/css');
+directory.createDirectory(appName, '/public/font');
+directory.createDirectory(appName, '/public/img');
