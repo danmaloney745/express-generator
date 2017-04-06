@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "express-generator",
   "version": "0.0.0",
   "description": "",
@@ -12,18 +11,6 @@
   "dependencies": {
     "commander": "^2.9.0",
     "express": "^3.2.6"
-=======
-  "name": "expres-generator",
-  "version": "0.0.0",
-  "description": "",
-  "author": "Daniel Maloney <danielmaloneygti@gmail.com>",
-  "bin": {
-    "snippet": "index.js"
-  },
-  "dependencies": {
-    "commander": "^2.9.0",
-    "express": "~3.2.4"
->>>>>>> d2f46dbbfc37764733db66c785a60b9661ad7816
   },
   "devDependencies": {},
   "license": "ISC"
