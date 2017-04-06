@@ -1,0 +1,17 @@
+{
+  "name": "express-generator",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Daniel Maloney <danielmaloneygti@gmail.com>",
+  "bin": {
+    "snippet": "./index.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "commander": "^2.9.0",
+    "express": "^3.2.6"
+  },
+  "devDependencies": {},
+  "license": "ISC"
+}
