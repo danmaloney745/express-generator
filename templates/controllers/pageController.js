@@ -1,7 +1,6 @@
 class Page {
-    
     static showIndex(req,res){
-        res.render("layout");
+        res.render("index");
     }
 }
 

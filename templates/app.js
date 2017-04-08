@@ -1,14 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const layout = require('express-ejs-layouts');
+
 const routes = require("./routes/routes");
-const dotenv = require('dotenv');
+
 const app = express();
 
-dotenv.load();
-app.set('view engine', 'ejs');
-app.use(layout);
+//View Engine
+app.set('view engine' , 'ejs');
 
+//Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
