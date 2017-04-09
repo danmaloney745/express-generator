@@ -1,0 +1,21 @@
+* {
+    color: #424242;
+}
+
+
+/* NAVBAR STYLING */
+nav {
+    background-color: white;
+}
+
+nav .brand-logo {
+    color: #424242;
+}
+
+nav .button-collapse {
+    color: #424242;
+}
+
+nav ul li a {
+    color: #424242;
+}
