@@ -10,7 +10,7 @@
   "preferGlobal": true,
   "dependencies": {
     "commander": "^2.9.0",
-    "express": "^3.2.6"
+    "express": "^4.15.2"
   },
   "devDependencies": {},
   "license": "ISC"
