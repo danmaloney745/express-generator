@@ -40,12 +40,15 @@ let packageJson = {
     }
 }
 
-let createProject = directory.createDirectory(appName, projectStrcuture)
+directory.createDirectory(appName, projectStrcuture)
     .then(() => {
         directory.loadAndWrite(filesStructure, appName);
     })
     .catch(() => {
         console.log("This Project " + appName.substring(1) + " already exists!");
+    })
+    .then(() => {
+        directory.createPackageJson(appName, '/package.json', JSON.stringify(packageJson, null, 2) + '\n');
     })
     .then(() => {
         directory.instructions(appName);
