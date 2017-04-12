@@ -47,5 +47,8 @@ let createProject = directory.createDirectory(appName, projectStrcuture)
     .catch(() => {
         console.log("This Project " + appName.substring(1) + " already exists!");
     })
+    .then(() => {
+        directory.instructions(appName);
+    })
 
 

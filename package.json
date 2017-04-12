@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Daniel Maloney <danielmaloneygti@gmail.com>",
   "bin": {
-    "snippet": "./index.js"
+    "exp-gen": "./index.js"
   },
   "preferGlobal": true,
   "dependencies": {
