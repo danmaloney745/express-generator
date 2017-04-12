@@ -7,6 +7,12 @@ const exec = require('child_process').exec;
 const jsonpkg = require('./package.json');
 const directory = require('./lib/createProject');
 
+let projectStrcuture = ['/controllers', '/routes', '/views', '/models', '/public', '/public/js', '/public/css', 
+                        '/public/js/materialize', '/public/css/materialize', '/public/fonts', '/public/imgs'];
+
+let filesStructure = ['/app.js', '/.env', '/Procfile', '/controllers/pageController.js', '/public/css/style.css', '/public/js/init.js',
+                    '/public/css/materialize/materialize.min.css', '/public/js/materialize/materialize.min.js', '/routes/routes.js', '/views/index.ejs'];
+
 program
     .version('-v, --version', jsonpkg.version)
     .description('An express generator')
@@ -20,6 +26,7 @@ program.parse(process.argv);
 //name of the directory
 let appName = './' + program.name;
 
+//Define the package.json for the new app
 let packageJson = {
     name: appName.substring(2),
     version: '0.0.1',
@@ -33,38 +40,13 @@ let packageJson = {
     }
 }
 
-directory.createDirectory(appName);
-directory.createDirectory(appName, '/controllers');
-directory.createDirectory(appName, '/routes');
-directory.createDirectory(appName, '/views');
-directory.createDirectory(appName, '/models');
-directory.createDirectory(appName, '/public');
-directory.createDirectory(appName, '/public/js');
-directory.createDirectory(appName, '/public/css');
-directory.createDirectory(appName, '/public/js/materialize');
-directory.createDirectory(appName, '/public/css/materialize');
-directory.createDirectory(appName, '/public/fonts');
-directory.createDirectory(appName, '/public/imgs');
+directory.createDirectory(appName, projectStrcuture);
 
-let appjs = directory.loadFromTemplate('/app.js');
-let env = directory.loadFromTemplate('.env');
-let proc = directory.loadFromTemplate('Procfile');
-let pageController = directory.loadFromTemplate('/controllers/pageController.js');
-let customCss = directory.loadFromTemplate('/public/css/style.css');
-let customJs = directory.loadFromTemplate('/public/js/init.js');
-let materializeCss = directory.loadFromTemplate('/public/css/materialize/materialize.min.css');
-let materializeJs = directory.loadFromTemplate('/public/js/materialize/materialize.min.js');
-let routes = directory.loadFromTemplate('/routes/routes.js');
-let indexEjs = directory.loadFromTemplate('/views/index.ejs');
+//directory.createDirectory(appName, projectStrcuture);
 
+directory.loadAndWrite(filesStructure, appName);
 
-directory.writeLoadedContent(appName + '/app.js', appjs);
-directory.writeLoadedContent(appName + "/.env", env);
-directory.writeLoadedContent(appName + "/Procfile", proc);
-directory.writeLoadedContent(appName + "/controllers/pageController.js", pageController);
-directory.writeLoadedContent(appName + "/public/css/style.css", customCss);
-directory.writeLoadedContent(appName + "/public/js/init.js", customJs);
-directory.writeLoadedContent(appName + "/public/css/materialize/materialize.min.css", materializeCss);
-directory.writeLoadedContent(appName + "/public/js/materialize/materialize.min.js", materializeJs);
-directory.writeLoadedContent(appName + "/routes/routes.js", routes);
-directory.writeLoadedContent(appName + "/views/index.ejs", indexEjs);
+//directory.createDirectory(appName, projectStrcuture[i]);
+
+//directory.loadAndWrite(filesStructure, appName);
+
