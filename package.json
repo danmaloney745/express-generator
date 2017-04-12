@@ -1,9 +1,21 @@
 {
   "name": "express-generator",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "An express application generator using an rMVC layour, and ejs template.",
+  "keywords": [
+    "express",
+    "generator",
+    "ejs",
+    "rMVC",
+    "MVC",
+    "template",
+    "heroku",
+    "materialize",
+    "es6"
+  ],
+  "author": "Daniel Maloney",
+  "repository": "danmaloney745/express-generator",
   "main": "index.js",
-  "author": "Daniel Maloney <danielmaloneygti@gmail.com>",
   "bin": {
     "exp-gen": "./index.js"
   },

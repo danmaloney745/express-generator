@@ -1,22 +1,48 @@
+# express-generator
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+## Installation
 
+```bash
+$ npm install
+```
 
-Welcome to your Node.js project on Cloud9 IDE!
+## Run Application
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+Using the -n flag, name your project and the program will subsiquently genrate the project template layout.   
 
-## Running the server
+```bash
+$ exp-gen -n <name>
+```
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
+Navigate to the created project:
 
-2) Alternatively you can launch the app from the Terminal:
+```bash
+$ cd <name>
+```
 
-    $ node server.js
+Install package dependencies:
 
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+```bash
+$ npm install
+```
+
+Run the application locally at:
+
+```bash
+$ node app.js
+```
+
+Navigate to a browser and type the folloing link to display the applicaion.
+`http://localhost:3000/`:
+
+## Command Line Options
+
+This generator can also be further configured with the following command line flags.
+
+    -h, --help          output usage information
+        --version       output the version number
+    -n, --name <name>   Project name
+
+## Info
+
+The express-generator generates a blank express project with a rMVC structure. The project uses an ejs view engine and includes the Materialize framework to style the pages. A Procfile and a .env file is also generated to deploy the application to Heroku.
