@@ -1,5 +1,5 @@
 {
-  "name": "express-generator",
+  "name": "express-generator-dm",
   "version": "1.0.0",
   "description": "An express application generator using an rMVC layour, and ejs template.",
   "keywords": [

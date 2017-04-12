@@ -1,4 +1,4 @@
-# express-generator
+# express-generator-dm
 
 ## Installation
 
@@ -8,7 +8,7 @@ $ npm install
 
 ## Run Application
 
-Using the -n flag, name your project and the program will subsiquently genrate the project template layout.   
+Using the -n flag, name your project and the program will subsiquently generate the project template layout.   
 
 ```bash
 $ exp-gen -n <name>
@@ -32,7 +32,7 @@ Run the application locally at:
 $ node app.js
 ```
 
-Navigate to a browser and type the folloing link to display the applicaion.
+Navigate to a browser and type the following link to display the applicaion.
 `http://localhost:3000/`:
 
 ## Command Line Options
