@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-$ npm install
+$ npm install express-generator-dm
 ```
 
 ## Run Application
